@@ -1,0 +1,122 @@
+/* -------------------- BASE -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  --color-black: #362d21;
+  --color-tan: #e7d1b0;
+  --color-tan-medium: #f5e7d0;
+  --color-tan-light: #fff6e8;
+
+  --font-text: "Baskervville", serif;
+  --font-bold: "Libre Baskerville", serif;
+  --font-title: "Oswald", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  margin: 0;
+  background: linear-gradient(var(--color-tan-medium), var(--color-tan));
+  font-size: 16px;
+  font-family: var(--font-text);
+  color: var(--color-black);
+}
+
+a {
+  color: inherit;
+}
+
+/* -------------------- UTILS -------------------- */
+
+.centered {
+  text-align: center !important;
+}
+
+/* -------------------- CONTAINERS -------------------- */
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header,
+footer,
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+header,
+footer {
+  flex-basis: 0;
+}
+
+/* -------------------- CARD -------------------- */
+
+.card {
+  width: 100%;
+  padding: 10px;
+  background: var(--color-tan-light);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 20px 30px rgba(0, 0, 0, 0.1),
+    0 30px 60px rgba(0, 0, 0, 0.1);
+}
+.card-inner {
+  padding: 20px;
+  border: 4px double var(--color-black);
+}
+.card-title {
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.card-content {
+  font-size: 1.1rem;
+}
+.card-content p {
+  margin: 0 0 20px;
+  text-align: justify;
+}
+.card-content p:last-child {
+  margin: 0;
+}
+.card-content a {
+  font-family: var(--font-title);
+}
+.card-content b {
+  font-family: var(--font-bold);
+  font-size: 0.9rem;
+}
+.card-iframe {
+  position: relative;
+  width: 100%;
+  padding-top: calc(9 / 16 * 100%);
+  background-color: var(--color-black);
+}
+.card-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+#logo {
+  width: 150px;
+  fill: var(--color-black);
+}
