@@ -23,7 +23,6 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   margin: 0;
-  background: linear-gradient(var(--color-tan-medium), var(--color-tan));
   font-size: 16px;
   font-family: var(--font-text);
   color: var(--color-black);
@@ -46,10 +45,9 @@ a {
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  max-width: 600px;
   height: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 12px;
+  background: linear-gradient(var(--color-tan-medium), var(--color-tan));
 }
 header,
 footer,
@@ -57,11 +55,17 @@ footer,
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
+}
+#content {
   flex-grow: 1;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 header,
 footer {
-  flex-basis: 0;
+  flex-grow: 0;
 }
 
 /* -------------------- CARD -------------------- */
@@ -85,9 +89,6 @@ footer {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.card-content {
-  font-size: 1rem;
-}
 .card-content p {
   margin: 0 0 20px;
   text-align: justify;
@@ -97,10 +98,15 @@ footer {
 }
 .card-content a {
   font-family: var(--font-title);
+  font-size: 1.1rem;
 }
 .card-content b {
   font-family: var(--font-bold);
   font-size: 0.9rem;
+}
+.card-img {
+  display: block;
+  width: 100%;
 }
 .card-iframe {
   position: relative;
