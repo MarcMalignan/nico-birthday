@@ -74,7 +74,7 @@ footer {
     0 30px 60px rgba(0, 0, 0, 0.1);
 }
 .card-inner {
-  padding: 20px;
+  padding: 16px;
   border: 4px double var(--color-black);
 }
 .card-title {
@@ -86,7 +86,7 @@ footer {
   white-space: nowrap;
 }
 .card-content {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .card-content p {
   margin: 0 0 20px;
